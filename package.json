@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "description": "A TypeScript and Node.js plug & play comments microservice.",
   "scripts": {
-    "server:dev": "nodemon",
-    "server:start": "node ./dist/server.js",
+    "dev": "nodemon",
+    "start": "node ./dist/server.js",
     "db:migrate": "ts-node ./src/database/migrations",
     "db:migrate:prod": "node ./dist/database/migrations",
     "build": "tsc"

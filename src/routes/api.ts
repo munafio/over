@@ -17,8 +17,6 @@ Router.prefix("/comments", [
   Router.put("/update", "CommentController@update"),
   // DELETE
   Router.delete("/delete", "CommentController@delete"),
-  // GET Replies
-  Router.get("/get/replies", "CommentController@get"),
 ]);
 
 export default Router.getRouter();
