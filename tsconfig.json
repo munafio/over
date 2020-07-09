@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "removeComments": true,
+    "esModuleInterop": true,
+    "lib": ["es6", "DOM"],
+    "allowJs": true,
+    "strict": true,
+    "strictPropertyInitialization": false,
+    // "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    // "emitDecoratorMetadata": true,
+    // "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "local-types": ["./dev/types/root.d.ts"]
+    }
+  },
+  "include": ["src/*", "src/*/*", "src/*/*/*", "src/*/*/*/*"],
+  "exclude": ["node_modules", "dev"]
+}
