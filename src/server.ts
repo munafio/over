@@ -28,12 +28,12 @@ class Server extends Kernel {
    *
    */
   registerRoutes(): void {
-    this.app.use("/", (req, res) =>
+    this.app.get("/", (req, res) => {
       res.status(200).json({
         message: "Welcome to OVER!",
         status: 200,
-      })
-    );
+      });
+    });
     this.app.use("/api", apiRoutes);
   }
 
